@@ -28,6 +28,7 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
+		<!-- Mobile menu -->
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
@@ -35,10 +36,11 @@
 			</div>
 		</div>
 
+		<!-- Desktop menu -->
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+					<li class="home lang-selector-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">ENGLISH / SPANISH</a></li>
 				</ul>
 			</div>
 			<div class="top-bar-right">

@@ -29,7 +29,7 @@
 
   .menu .home a {
     font-size: 1rem;
-    color: #B9B9B9;
+    color: white;
   }
 
   .menu a {
@@ -48,7 +48,8 @@
   }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { padding-right: 30px; }
+  .menu li:last-child { padding-right: 50px; }
 
   .dropdown.menu .submenu {
     background-color: #121212;
