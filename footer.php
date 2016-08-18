@@ -12,11 +12,24 @@
 
 		</section>
 		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
+			<?php if(is_front_page()) : ?>
+				<footer id="footer-home">
+					<div id="footer-icons" class="float-left">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</div>
+					<div id="footer-author" class="float-right">
+						<p>Foto: Nicolás Recordón</p>
+					</div>
+				</footer>
+			<?php else : ?>
+				<footer id="footer">
+					<?php do_action( 'foundationpress_before_footer' ); ?>
+					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+					<?php do_action( 'foundationpress_after_footer' ); ?>
+				</footer>
+			<?php endif; ?>
+
 		</div>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
