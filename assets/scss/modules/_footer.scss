@@ -15,4 +15,26 @@
 			padding: 0;
 		}
 	}
+
+	#footer-home {
+		#footer-icons {
+			padding-left: 2.5rem;
+			padding-bottom: 1rem;
+			a {
+				color: black;
+			}
+			i {
+				font-size: 3rem;
+				padding-right: 3rem;
+			}
+		}
+		#footer-author {
+			padding: 1rem;
+			p {
+				font-family: 'MyriadPro-LightSemiExt';
+				text-transform: uppercase;
+			}
+		}
+	}
+
 }

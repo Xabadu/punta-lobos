@@ -1,0 +1,10 @@
+#page-home {
+
+  .main-content {
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+
+  }
+
+}

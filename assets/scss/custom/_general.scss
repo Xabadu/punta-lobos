@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'MyriadPro-LightSemiExt';
+  src: url('../fonts/MyriadPro-LightSemiExt.otf');
+}
+
+@font-face {
+  font-family: 'MyriadPro-SemiBold';
+  src: url('../fonts/MyriadPro-Semibold.otf');
+}
+
+.lang-selector-title {
+  padding-left: 1.5rem;
+  a {
+    font-family: 'MyriadPro-SemiBold';
+  }
+}
+
+.menu-title {
+  font-family: 'MyriadPro-LightSemiExt';
+}
+
+.current-menu-item {
+  a {
+    color: #f68528 !important;
+  }
+}
