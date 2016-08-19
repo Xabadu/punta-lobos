@@ -18,11 +18,14 @@ function setup_theme_admin_menus() {
 function theme_settings() {
   $instagram_user = get_option("los_lobos_instagram_user");
   $facebook_user = get_option("los_lobos_facebook_user");
+  $contact_email = get_option("los_lobos_contact_email");
   if( isset($_POST["update_settings"]) ) {
     $instagram_user = esc_attr($_POST["instagram_user"]);
     $facebook_user = esc_attr($_POST["facebook_user"]);
+    $contact_email = esc_attr($_POST["contact_email"]);
     update_option("los_lobos_instagram_user", $instagram_user);
     update_option("los_lobos_facebook_user", $facebook_user);
+    update_option("los_lobos_contact_email", $contact_email);
     ?>
     <div id="message" class="updated">Opciones guardadas</div>
     <?php
@@ -53,6 +56,16 @@ function theme_settings() {
           </th>
           <td>
             <input type="text" name="facebook_user" size="25" value="<?php echo $facebook_user; ?>" />
+          </td>
+        </tr>
+        <tr valign="top">
+          <th scope="row">
+            <label for="facebook_user">
+              Email de contacto:
+            </label>
+          </th>
+          <td>
+            <input type="text" name="contact_email" size="25" value="<?php echo $contact_email; ?>" />
           </td>
         </tr>
         <input type="hidden" name="update_settings" value="Y" />
