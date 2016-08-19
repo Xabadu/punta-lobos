@@ -4,6 +4,7 @@
 	margin: 0 auto;
 	border-top: 1px solid #ccc;
 	margin-top: rem-calc(60);
+	background-color: #e6e6e6;
 
 	#footer {
 		@include grid-row();
@@ -16,24 +17,17 @@
 		}
 	}
 
-	#footer-home {
-		#footer-icons {
-			padding-left: 2.5rem;
-			padding-bottom: 1rem;
-			a {
-				color: black;
-			}
-			i {
-				font-size: 3rem;
-				padding-right: 3rem;
-			}
-		}
-		#footer-author {
-			padding: 1rem;
-			p {
-				font-family: 'MyriadPro-LightSemiExt';
-				text-transform: uppercase;
-			}
+	.footer-item {
+		margin-bottom: 50px;
+		h6 {
+			font-family: 'MyriadPro-LightSemiExt';
+			text-align: center;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+		},
+		p {
+			font-family: 'MyriadPro-LightSemiExt';
+			text-align: center;
 		}
 	}
 

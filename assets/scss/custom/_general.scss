@@ -24,3 +24,35 @@
     color: #f68528 !important;
   }
 }
+
+#slider-info {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  #slider-icons {
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+    a {
+      color: black;
+    }
+    i {
+      font-size: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  #slider-author {
+    padding: 1rem;
+    p {
+      font-family: 'MyriadPro-LightSemiExt';
+      text-transform: uppercase;
+    }
+  }
+}
+
+.jr-insta-slider {
+  h6 {
+    font-size: 1.5rem;
+    font-family: 'MyriadPro-LightSemiExt';
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

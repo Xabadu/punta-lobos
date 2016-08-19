@@ -1,5 +1,5 @@
-jQuery.fn.comments = function( blnDeep ){
-    var blnDeep = (blnDeep || false);
+jQuery.fn.comments = function( blDeep ){
+    var blnDeep = (blDeep || false);
     var jComments = $( [] );
 
     // Loop over each node to search its children for
@@ -47,4 +47,4 @@ jQuery.fn.comments = function( blnDeep ){
 
     // Return the jQuery comments collection.
     return( jComments );
-}
+};
