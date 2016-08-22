@@ -12,7 +12,7 @@ $(function() {
   });
 
   revapi1.bind("revolution.slide.onchange",function (e,data) {
-    var authorName = $('#footer-author-name');
+    var authorName = $('#slider-author-name');
     if(authorName.length > 0) {
       authorName.html('Foto: ' + authors[data.slideLIIndex].name);
     }

@@ -55,3 +55,14 @@
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );
+			putRevSlider("home"); ?>
+			<div id="slider-info">
+				<div id="slider-icons" class="float-left">
+					<a href="http://instagram.com/<?php echo get_option("los_lobos_instagram_user"); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="http://facebook.com/<?php echo get_option("los_lobos_facebook_user"); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+				<div id="slider-author" class="float-right">
+					<p id="slider-author-name"></p>
+				</div>
+			</div>
+		<?php
