@@ -74,12 +74,37 @@
   margin-top: 50px;
   font-family: 'DarbySansPoster-Medium';
   text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.entry-content {
+  font-family: 'MyriadPro-LightSemiExt';
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'DarbySansPoster-Medium' !important;
+  }
+  h4 {
+    margin-top: 100px;
+  }
 }
 
 .text-bold {
   font-weight: bold;
 }
 
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 .cf-label {
   font-family: 'MyriadPro-LightSemiExt';
+  label {
+    text-transform: uppercase !important;
+  }
 }
