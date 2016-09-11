@@ -19,6 +19,9 @@
 						<?php do_action( 'foundationpress_after_footer' ); ?>
 					</footer>
 				</div>
+			<?php else : ?>
+				<div id="footer-home">
+				</div>
 			<?php endif; ?>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
