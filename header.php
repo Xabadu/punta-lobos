@@ -40,7 +40,7 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home lang-selector-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">ENGLISH / SPANISH</a></li>
+					<li class="home lang-selector-title"><a href="<?php echo pll_home_url('en_US'); ?>">ENGLISH</a> <span>/</span> <a href="<?php echo pll_home_url('es_ES'); ?>">SPANISH</a></li>
 				</ul>
 			</div>
 			<div class="top-bar-right">

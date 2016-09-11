@@ -2,6 +2,9 @@
 $(window).bind(' load resize orientationChange ', function () {
    var footer = $("#footer-container");
    var pos = footer.position();
+   if(typeof pos == 'undefined') {
+     pos = $("#footer-home").position();
+   }
    var height = $(window).height();
    height = height - pos.top;
    height = height - footer.height() -1;
