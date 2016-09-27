@@ -47,7 +47,7 @@
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a { padding: 1rem; letter-spacing: 0.075em; }
   .menu li:not(:last-child) { padding-right: 30px; }
   .menu li:last-child { padding-right: 50px; }
 
