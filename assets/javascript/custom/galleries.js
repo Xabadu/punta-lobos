@@ -35,7 +35,8 @@ $(function() {
     $('a[data-tag="__all__"]').text(allCategoryLabel);
   }
   var pEmail = getParameterByName('w');
-  if(pEmail !== '') {
+
+  if(pEmail !== null) {
     pEmail = pEmail.split('-');
     pEmail = pEmail[0] + '@' + pEmail[1] + '.' + pEmail[2];
     $('.photographer-email input[type=text]').val(pEmail);
