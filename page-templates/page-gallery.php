@@ -13,7 +13,6 @@ get_header(); ?>
   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
       <header>
           <h1 class="entry-title text-center">- <?php the_title(); ?> -</h1>
-          <p id="contact_email"><?php echo get_option("los_lobos_contact_email"); ?></p>
       </header>
       <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
       <div class="entry-content">

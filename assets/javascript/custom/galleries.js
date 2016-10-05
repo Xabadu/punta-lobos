@@ -2,7 +2,7 @@ $(function() {
   var authors = [];
   var language = window.location.pathname.split('/')[1];
   var photoText = 'Foto';
-  var photographersText = 'Fotografos: ';
+  var photographersText = 'Fotógrafos: ';
   var allCategoryLabel = 'Todos';
   if(language === 'en') {
     photoText = 'Photo';

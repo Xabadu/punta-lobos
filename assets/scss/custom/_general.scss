@@ -23,9 +23,11 @@
   a {
     font-family: 'MyriadPro-SemiBold';
     display: inline-table !important;
+    font-size: 0.8rem !important;
   }
   span {
     color: white;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -149,4 +151,8 @@
 
 .hidden {
   display: none;
+}
+
+#menu-english .dropdown, #menu-principal .dropdown {
+  min-width: 90px !important;
 }
