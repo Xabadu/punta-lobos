@@ -35,7 +35,7 @@ $(function() {
   });
 
   $('.grid-gallery-photos').ready(function() {
-    $('.grid-gallery-photos').masonry({
+    $('.grid-gallery-photos').packery({
       columnWidth: 200,
       itemSelector: '.crop'
     });
