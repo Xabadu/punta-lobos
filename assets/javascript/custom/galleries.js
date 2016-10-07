@@ -34,13 +34,6 @@ $(function() {
     }
   });
 
-  $('.grid-gallery-photos').ready(function() {
-    $('.grid-gallery-photos').packery({
-      columnWidth: 200,
-      itemSelector: '.crop'
-    });
-  });
-
   var gallery = $('.grid-gallery-nav');
   if(typeof gallery !== 'undefined') {
     gallery.prepend('<span id="photographers-label">'+photographersText+'</span>');
