@@ -10,6 +10,9 @@ $(function() {
     allCategoryLabel = 'All';
     $('input[name="FNAME"]').attr('placeholder', 'Name');
     $('input[value="Suscribirse"]').val('Subscribe');
+    $('.mc4wp-success p').hide();
+    $('.mc4wp-success p').html('Welcome to the community of Punta de Lobos Foundation. Soon we will send updates of this amazing project in which we are working on.');
+    $('.mc4wp-success p').show();
   }
   revapi1.bind("revolution.slide.onloaded",function (e) {
     var list = $('.tp-revslider-mainul');
