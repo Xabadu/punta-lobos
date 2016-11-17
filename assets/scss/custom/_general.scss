@@ -41,7 +41,41 @@
   }
 }
 
+#arrow-down {
+  position: relative;
+  z-index: 9999;
+  margin-top: -50px;
+  img {
+    width: 150px;
+    height: 90px;
+  }
+}
+
 #slider-info {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  #slider-icons {
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+    a {
+      color: black;
+    }
+    i {
+      font-size: 2rem;
+      padding-right: 3rem;
+    }
+  }
+  #slider-author {
+    padding: 1rem;
+    p {
+      font-family: 'MyriadPro-LightSemiExt';
+      text-transform: uppercase;
+      letter-spacing: 0.075em;
+    }
+  }
+}
+
+#slider-info-home {
   margin-top: 1rem;
   margin-bottom: 1rem;
   #slider-icons {
