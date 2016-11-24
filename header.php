@@ -53,9 +53,9 @@
 		</nav>
 		<div id="donate-link">
 			<?php if(pll_current_language() == 'en') : ?>
-				<a class="don-en-l" href="#">DONATE NOW</a>
+				<a class="don-en-l" href="/en/how-to-help/donations">DONATE NOW</a>
 			<?php else : ?>
-				<a href="#">DONA HOY</a>
+				<a href="/es/como-ayudar/donaciones">DONA HOY</a>
 			<?php endif; ?>
 		</div>
 	</header>
