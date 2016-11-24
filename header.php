@@ -51,6 +51,13 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+		<div id="donate-link">
+			<?php if(pll_current_language() == 'en') : ?>
+				<a class="don-en-l" href="#">DONATE NOW</a>
+			<?php else : ?>
+				<a href="#">DONA HOY</a>
+			<?php endif; ?>
+		</div>
 	</header>
 
 	<section class="container">

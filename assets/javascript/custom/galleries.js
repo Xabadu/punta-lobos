@@ -8,6 +8,7 @@ $(function() {
     photoText = 'Photo';
     photographersText = 'Photographers: ';
     allCategoryLabel = 'All';
+
     $('input[name="FNAME"]').attr('placeholder', 'Name');
     $('input[value="Suscribirse"]').val('Subscribe');
     $('.mc4wp-success p').hide();
