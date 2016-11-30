@@ -11,19 +11,13 @@
 ?>
 
 		</section>
-			<?php if(!is_front_page()) : ?>
 				<div id="footer-container">
-					<footer id="footer">
+					<footer id="footer" name="footer-section">
 						<?php do_action( 'foundationpress_before_footer' ); ?>
 						<?php dynamic_sidebar( 'footer-widgets' ); ?>
 						<?php do_action( 'foundationpress_after_footer' ); ?>
 					</footer>
 				</div>
-			<?php else : ?>
-				<div id="footer-home">
-				</div>
-			<?php endif; ?>
-
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>

@@ -23,18 +23,12 @@ $(function() {
       var img = $(el[0].lastChild);
       authors.push({ name: img.attr('title'), email: img.attr('alt') });
     });
-    if(language === 'en') {
-      $('.dona-hoy-img img').attr('src', '/wp-content/themes/los-lobos/assets/images/dona-en.png');
-    }
   });
 
   revapi1.bind("revolution.slide.onchange",function (e,data) {
     var authorName = $('#slider-author-name');
     if(authorName.length > 0) {
       authorName.html(photoText + ': ' + authors[data.slideLIIndex].name);
-    }
-    if(language === 'en') {
-      $('.dona-hoy-img img').attr('src', '/wp-content/themes/los-lobos/assets/images/dona-en.png');
     }
   });
 
