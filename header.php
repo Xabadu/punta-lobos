@@ -36,6 +36,14 @@
 			</div>
 		</div>
 
+		<div id="donate-bar" data-responsive-toggle="site-navigation">
+			<?php if(pll_current_language() == 'en') : ?>
+				<a class="don-en-l" href="/en/how-to-help/donations">DONATE NOW</a>
+			<?php else : ?>
+				<a href="/es/como-ayudar/donaciones">DONA HOY</a>
+			<?php endif; ?>
+		</div>
+
 		<!-- Desktop menu -->
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
@@ -51,6 +59,7 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+
 		<div id="donate-link">
 			<?php if(pll_current_language() == 'en') : ?>
 				<a class="don-en-l" href="/en/how-to-help/donations">DONATE NOW</a>
