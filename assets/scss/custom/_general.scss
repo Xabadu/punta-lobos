@@ -232,9 +232,37 @@
   }
 }
 
+.title-bar-title {
+  a {
+    font-family: 'MyriadPro-LightSemiExt';
+    letter-spacing: 0.075em;
+  }
+}
+
+#mobile-menu {
+  ul {
+    li {
+      a {
+        font-family: 'MyriadPro-LightSemiExt';
+        letter-spacing: 0.075em;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 640px) {
   #donate-link {
     display: none;
+  }
+  #slider-author {
+    padding: 5px 4px !important;
+  }
+  #slider-icons {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    i {
+      padding-right: 1.5rem !important;
+    }
   }
 }
 
