@@ -15,22 +15,24 @@ $(function() {
     $('.mc4wp-success p').html('Welcome to the community of Punta de Lobos Foundation. Soon we will send updates of this amazing project in which we are working on.');
     $('.mc4wp-success p').show();
   }
-  revapi1.bind("revolution.slide.onloaded",function (e) {
-    var list = $('.tp-revslider-mainul');
-    var items = list.children().children().comments();
-    $.each(items, function(index, value) {
-      var el = $(value);
-      var img = $(el[0].lastChild);
-      authors.push({ name: img.attr('title'), email: img.attr('alt') });
+  if(typeof revapi1 !== 'undefined') {
+    revapi1.bind("revolution.slide.onloaded",function (e) {
+      var list = $('.tp-revslider-mainul');
+      var items = list.children().children().comments();
+      $.each(items, function(index, value) {
+        var el = $(value);
+        var img = $(el[0].lastChild);
+        authors.push({ name: img.attr('title'), email: img.attr('alt') });
+      });
     });
-  });
 
-  revapi1.bind("revolution.slide.onchange",function (e,data) {
-    var authorName = $('#slider-author-name');
-    if(authorName.length > 0) {
-      authorName.html(photoText + ': ' + authors[data.slideLIIndex].name);
-    }
-  });
+    revapi1.bind("revolution.slide.onchange",function (e,data) {
+      var authorName = $('#slider-author-name');
+      if(authorName.length > 0) {
+        authorName.html(photoText + ': ' + authors[data.slideLIIndex].name);
+      }
+    });
+  }
 
   var gallery = $('.grid-gallery-nav');
   if(typeof gallery !== 'undefined') {
